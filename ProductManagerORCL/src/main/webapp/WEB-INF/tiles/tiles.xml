@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE tiles-definitions PUBLIC
+	"-//Apache Software Foundation//DTD Tiles Configuration 2.0//EN" 
+	"http://tiles.apache.org/dtds/tiles-config_2_0.dtd">
+	
+<tiles-definitions>
+	<definition name="mytemplate" 
+		template="/WEB-INF/views/admin_template.jsp">
+		<put-attribute name="content" value=""></put-attribute>
+	</definition>
+	
+	
+	<definition name="user" extends="mytemplate">
+		<put-attribute name="content" value="/WEB-INF/views/user.jsp"></put-attribute>
+	</definition>
+	
+	<definition name="useradd" extends="mytemplate">
+		<put-attribute name="content" value="/WEB-INF/views/useradd.jsp"></put-attribute>
+	</definition>
+	
+	<definition name="useradded" extends="mytemplate">
+		<put-attribute name="content" value="/WEB-INF/views/useradded.jsp"></put-attribute>
+	</definition>
+	
+	<definition name="userupdated" extends="mytemplate">
+		<put-attribute name="content" value="/WEB-INF/views/userupdated.jsp"></put-attribute>
+	</definition>
+	
+	<definition name="userupdateform" extends="mytemplate">
+		<put-attribute name="content" value="/WEB-INF/views/userupdateform.jsp"></put-attribute>
+	</definition>
+	
+</tiles-definitions>
